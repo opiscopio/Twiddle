@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+body {
+	background-image: url('Background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@font-face {
+	font-family: 'CorporateBlack';
+	src: url('CorporateBlack.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.main {
+	text-align: center;
+	padding: 50px;
+	user-select: none;
+}
+
+#logo {
+	resize: none;
+	user-select: none;
+}
+
+#error {
+	margin-top: 20px;
+	resize: none;
+	user-select: none;
+}
+
+#errortext {
+	width: 800px;
+	height: 30px;
+	background-color: transparent;
+	border: solid transparent;
+	text-align: center;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	color: red;
+	resize: none;
+	user-select: none;
+}
+
+#fields {
+	margin-top: 30px;
+	resize: none;
+	user-select: none;
+}
+
+.INPUT {
+	width: 75px;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	margin-right: 10px;
+	background-color: rgba(255, 255, 255, 0.5); /* Adjust the last value for transparency */
+	border: 2px solid white;
+	border-radius: 5px;
+	user-select: none;
+}
+
+#button {
+	margin-top: 50px;
+	resize: none;
+	user-select: none;
+}
+
+#recommendBet {
+	width: 150px;
+	height: 70px;
+	cursor: pointer;
+	background-image: url('ButtonBet.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	font-size: 16px;
+	text-align: center;
+	color: transparent;
+	border: solid transparent;
+}
+
+#numbers {
+	margin-top: 40px;
+	resize: none;
+	user-select: none;
+	display: flex; /* Use flexbox to arrange items horizontally */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+
+#shownumbers {
+	width: 350px;
+	height: 200px;
+	justify-content: center;
+}
+
+#showdozens {
+	width: 200px;
+	height: 200px;
+}
+
+#showonfire {
+	width: 350px;
+	height: 200px;
+}
+
+.RESULTS {
+	margin-right: 5px;
+	margin-left: 5px;
+	white-space: pre-wrap;
+	font-size: 35px;
+	font-family: "CorporateBlack", Arial, sans-serif;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: transparent;
+	border: solid transparent;
+	resize: none;
+	user-select: none;
+}
+
+.layoutDiv {
+    margin-top: 40px;
+	position: relative;
+    resize: none;
+    user-select: none;
+	display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.layout {
+	width: 900px;
+	object-fit: cover;
+	user-select: none;
+}
+
+.tokens {
+    position: absolute;
+    user-select: none;
+	width: 800px;
+    top: 2px;
+    display: grid;
+    grid-template-columns: repeat(11, 69px); /* 11 tokens in a row, each 35px wide */
+    grid-template-rows: repeat(3, 86px); /* 3 rows of tokens, each 35px high */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+
+.token {
+	width: 35px;
+    height: 35px;
+	margin-left: 53px;
+    user-select: none;
+}
